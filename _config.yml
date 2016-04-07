@@ -1,29 +1,11 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: the generator files
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   This is a small blog where you'll find some descriptions of my code,
   random programming or installation quirks, science, opinions and
   occasionally some art.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jdcapa.github.io" # the base hostname & protocol for your site
+baseurl: ""
+url: "https://jdcapa.github.io"
 github_username:  jdcapa
-# noindex: true
-# gems:
-  # - jekyll-pandoc
-# pandoc:
-#   extensions:
-#     - normalize
-#     - smart
-#     - mathjax
-#     - csl: _styles/apa.csl
-#     - bibliography: bibliography/references.bib
-# Build settings
-markdown: pandoc
-# markdown: kramdown
+markdown: kramdown
+noindex: true
