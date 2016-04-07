@@ -25,5 +25,5 @@ github_username:  jdcapa
 #     - csl: _styles/apa.csl
 #     - bibliography: bibliography/references.bib
 # Build settings
-# markdown: pandoc
-markdown: kramdown
+markdown: pandoc
+# markdown: kramdown
