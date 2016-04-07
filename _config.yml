@@ -14,9 +14,9 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jdcapa.github.io" # the base hostname & protocol for your site
 github_username:  jdcapa
-noindex: true
-gems:
-  - jekyll-pandoc
+# noindex: true
+# gems:
+  # - jekyll-pandoc
 # pandoc:
 #   extensions:
 #     - normalize
@@ -25,4 +25,5 @@ gems:
 #     - csl: _styles/apa.csl
 #     - bibliography: bibliography/references.bib
 # Build settings
-markdown: pandoc
+# markdown: pandoc
+markdown: kramdown
