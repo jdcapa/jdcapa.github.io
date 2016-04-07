@@ -8,30 +8,30 @@
 // Our variables
 $base-font-family: DIN, "DIN Pro", "Bauer Grotesk", Futura, "Helvetica Neue", "Helvetica Neue LT W1G", Helvetica, sans-serif;
 $base-font-size:   18px;
-$base-font-weight: 450;
+$base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
 // Light
-// $text-color:       #1E1E20;
-// $background-color: #fdfdfd;
-// $brand-color:      #DC3522;
-
-// $grey-color:       #78787F;
-// $grey-color-light: #D7D7E5;
-// $grey-color-dark:  #2A2C2B;
-
-
-// Dark
-$text-color:       #fdfdfd;
-$background-color: #1E1E20;
+$text-color:       #1E1E20;
+$background-color: #fdfdfd;
 $brand-color:      #DC3522;
 
-$grey-color:       #D7D7E5;
-$grey-color-light: #78787F;
-$grey-color-dark:  #EFEFFF;
+$grey-color:       #78787F;
+$grey-color-light: #D7D7E5;
+$grey-color-dark:  #2A2C2B;
+
+
+// Dark (there needs to be more adjustments)
+// $text-color:       #fdfdfd;
+// $background-color: #1E1E20;
+// $brand-color:      #DC3522;
+
+// $grey-color:       #D7D7E5;
+// $grey-color-light: #78787F;
+// $grey-color-dark:  #EFEFFF;
 
 // Width of the content area
 $content-width:    800px;
