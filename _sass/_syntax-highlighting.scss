@@ -1,8 +1,19 @@
 /**
  * Syntax highlighting styles
  */
+
+
+code {
+    font-family: 'Source Code Pro', Courier, monospace;
+    font-size: 12px;
+}
+
 .highlight {
+    
+
     background: #fff;
+    font-size: 55%;
+
     @extend %vertical-rhythm;
 
     .highlighter-rouge & {

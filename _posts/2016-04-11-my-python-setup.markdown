@@ -1,19 +1,25 @@
 ---
 layout: post
-title:  "My Python Set-up!"
-date:   2016-04-12 21:11:19 +0200
-categories: jekyll update
+title:  "A scientists python 2.7.11 set-up"
+date:   2016-04-11 21:11:19 +0200
+categories: python science coding set-up
 ---
 
-Building Python from source
---------------------------
+building python from source
+---------------------------
+
+intro
+=====
 
 In the following I will describe my scientific python set-up.
-I'm currently working with **Linux Mint 17**. 
+I'm currently working with *Linux Mint 17*. 
 This OS is shipped with Python 2.7.6; yet I like the additional 
- [features]()
+ features
  of *Python 2.7.11* (once I updated my own programs I will shift to Python 3) and
  thus, this guide will be about the set-up of this very version.
+
+pre-requisites
+==============
 
 So lets get started; we'll begin with installing compiling Python 2.7.11, which
  requires a bunch of pre-requisites. 
@@ -21,13 +27,16 @@ For Linux Mint (which basically is a less annoying version of Ubuntu 14.04),
  we require:
 
 {% highlight bash %}
-\# apt-get install autotools-dev blt-dev bzip2 dpkg-dev g++-multilib gcc-multilib \
-                   libbluetooth-dev libbz2-dev libexpat1-dev libffi-dev libffi6 \
-                   libffi6-dbg libgdbm-dev libgpm2 libncursesw5-dev libreadline-dev \
-                   libsqlite3-dev libssl-dev libtinfo-dev mime-support net-tools \
-                   netbase python-crypto python-mox3 python-pil python-ply quilt \
-                   tk-dev zlib1g-dev
+sudo apt-get install autotools-dev blt-dev bzip2 dpkg-dev g++-multilib gcc-multilib \
+                     libbluetooth-dev libbz2-dev libexpat1-dev libffi-dev libffi6 \
+                     libffi6-dbg libgdbm-dev libgpm2 libncursesw5-dev libreadline-dev \
+                     libsqlite3-dev libssl-dev libtinfo-dev mime-support net-tools \
+                     netbase python-crypto python-mox3 python-pil python-ply quilt \
+                     tk-dev zlib1g-dev
 {% endhighlight %}
+
+download and compile python
+===========================
 
 Personally, I like to keep source code organised in `$HOME/.Source`, so that's
  where we'll start. Here is a the install script which installs Python into 
@@ -48,6 +57,9 @@ make -s -j4 |& tee compile.log
 make install |& tee install.log
 {% endhighlight %}
 
+bootstrapping
+============
+
 Now we need to bootstrap and update pip (and setup-tools) and prepare the 
  virtual environment.
 
@@ -61,14 +73,15 @@ bin/pip install --user cython
 {% endhighlight %}
 
 
-Setting up the virtual environment
-----------------------------------
+setting up the virtual environment
+==================================
 
 As you can see, in my 
  [.bashrc](https://github.com/jdcapa/bashrc.d/blob/main/05.ENV_PYTHON),
  I added the following:
 
 {% highlight bash %}
+# <.bashrc file content>
 if [ -e $HOME/.virtualenvs ]; then
     export WORKON_HOME=$HOME/.virtualenvs
     source ${PYTHON_LOC}/bin/virtualenvwrapper.sh
@@ -81,12 +94,15 @@ This ensures that whenever my bash is sourced, I'm in my local Python
 The virtualenv programme also allows you to create new temporary environments 
  for your personal enjoyment.
 
-**`python --version` should return 'Python 2.7.11'. Make sure you reload your
- `.bashrc`**
+The command `python --version` should now return 'Python 2.7.11'. 
+Make sure you reload your `.bashrc`
 
 
-Scientific Python
+scientific python
 -----------------
+
+intro
+=====
 
 While I like Python as a language, it would be nothing without the broad support
  of the scientific community.
@@ -97,6 +113,10 @@ Where the two former packages linear algebra (heavy mathematical operations) can
  code.
 The latter takes care of visualisation and beats most other (even commercial) 
  packages when it comes to customisability.
+
+
+BLAS
+====
 
 Anyway, let's make it happen.
 For both `numpy` and `scipy` we need a
@@ -117,6 +137,7 @@ I installed the Intel MKL libraries (11.3.2.181 | in /opt/intel) and
  [.bashrc](https://github.com/jdcapa/bashrc.d/blob/main/05.ENV_MKL).
 
 {% highlight bash %}
+# <.bashrc file content>
 if [ -e /opt/intel/mkl/bin/mklvars.sh ]; then
     source /opt/intel/mkl/bin/mklvars.sh intel64
     INTELMKL=/opt/intel/mkl/lib/intel64
@@ -124,6 +145,9 @@ if [ -e /opt/intel/mkl/bin/mklvars.sh ]; then
 fi
 {% endhighlight %}
 
+
+numpy
+=====
 After this we can install numpy:
 
 
@@ -170,6 +194,9 @@ python setup.py build   |& tee build.log
 python setup.py install |& tee setup.log
 {% endhighlight %}
 
+scipy
+=====
+
 Now open a new terminal (easiest way to get rid of the temporary variables) and
  install `scipy`.
 
@@ -185,6 +212,9 @@ python setup.py build   |& tee build.log
 python setup.py install |& tee setup.log
 {% endhighlight %}
 
+other packages
+==============
+
 I usually add some other python libraries:
 
 {% highlight bash %}
@@ -197,4 +227,4 @@ pip install --user git+https://github.com/jdcapa/PeriodicTable
 This should leave you with a crisp, fresh python set-up
 Let me know if you have suggestions or improvements.
 
-*-jd*
+*-jdcapa*
