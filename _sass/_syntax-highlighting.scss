@@ -1,23 +1,48 @@
 /**
  * Syntax highlighting styles
  */
-
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('../fonts/SourceCodePro-Regular.ttf.woff2') format('woff2'),
+       url('../fonts/SourceCodePro-Regular.ttf.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('../fonts/SourceCodePro-Bold.ttf.woff2') format('woff2'),
+       url('../fonts/SourceCodePro-Bold.ttf.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('../fonts/SourceCodePro-It.ttf.woff2') format('woff2'),
+       url('../fonts/SourceCodePro-It.ttf.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('../fonts/SourceCodePro-BoldIt.ttf.woff2') format('woff2'),
+       url('../fonts/SourceCodePro-BoldIt.ttf.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
 
 code {
-    font-family: 'Source Code Pro', Courier, monospace;
+    font-family: SourceCodePro, Courier, monospace;
     font-size: 12px;
 }
 
 .highlight {
-    
-
-    background: #fff;
+    background: #EFEFFF;
     font-size: 55%;
 
     @extend %vertical-rhythm;
 
     .highlighter-rouge & {
-      background: #eef;
+      //background: #fff;
     }
 
     .c     { color: #998; font-style: italic } // Comment
