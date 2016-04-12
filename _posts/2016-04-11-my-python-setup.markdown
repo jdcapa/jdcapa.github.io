@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A scientists python 2.7.11 set-up"
+title:  "A scientist's python 2.7.11 set-up"
 date:   2016-04-11 21:11:19 +0200
 categories: python science coding set-up
 ---
@@ -40,7 +40,7 @@ download and compile python
 
 Personally, I like to keep source code organised in `$HOME/.Source`, so that's
  where we'll start. Here is a the install script which installs Python into 
- my $HOME/.local folder.
+ my `$HOME/.local` folder.
 
 {% highlight bash %}
 LOC=$HOME/.local
@@ -109,7 +109,7 @@ While I like Python as a language, it would be nothing without the broad support
 Here, the `numpy`, `scipy` and `matplotlib` libraries are what separates python
  from the rest.
 Where the two former packages linear algebra (heavy mathematical operations) can
- be  accelerated to a `C`-like level, while keeping the beauty of the python
+ be  accelerated to a C-like level, while keeping the beauty of the python
  code.
 The latter takes care of visualisation and beats most other (even commercial) 
  packages when it comes to customisability.
@@ -132,7 +132,7 @@ While there are other open source options, these are less troublesome and easier
  [ATLAS](http://williambert.online/2012/03/how-to-install-accelerated-blas-into-a-python-virtualenv/),
  for which an extra set of libraries (LAPACK and CBLAS) are required.*
 
-I installed the Intel MKL libraries (11.3.2.181 | in /opt/intel) and 
+I installed the Intel MKL libraries (version 11.3.2.181 in /opt/intel) and 
  sourced their environment set-up script in my 
  [.bashrc](https://github.com/jdcapa/bashrc.d/blob/main/05.ENV_MKL).
 
@@ -221,7 +221,8 @@ I usually add some other python libraries:
 pip install --user ipython
 pip install --user matplotlib
 pip install --user h5py
-pip install --user git+https://github.com/jdcapa/PeriodicTable
+pip install --user pandas
+pip install --user nose
 {% endhighlight %}
 
 This should leave you with a crisp, fresh python set-up
