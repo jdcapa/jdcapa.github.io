@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A scientist's python 2.7.11 set-up"
+title:  "Python 2.7.11 set-up"
 date:   2016-04-11 21:11:19 +0200
 categories: python science coding set-up
 ---
