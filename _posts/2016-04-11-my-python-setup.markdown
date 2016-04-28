@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Python 2.7.11 set-up"
+title:  "python 2.7.11 set-up"
 date:   2016-04-11 21:11:19 +0200
 categories: python science coding set-up
 ---
@@ -223,6 +223,7 @@ pip install --user matplotlib
 pip install --user h5py
 pip install --user pandas
 pip install --user nose
+pip install --user pyyaml
 {% endhighlight %}
 
 This should leave you with a crisp, fresh python set-up
