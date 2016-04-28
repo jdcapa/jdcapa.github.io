@@ -10,6 +10,42 @@
     position: relative;
 }
 
+
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('../fonts/SourceSansPro/SourceSansPro-Regular.ttf.woff2') format('woff2'),
+       url('../fonts/SourceSansPro/SourceSansPro-Regular.ttf.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('../fonts/SourceSansPro/SourceSansPro-Bold.ttf.woff2') format('woff2'),
+       url('../fonts/SourceSansPro/SourceSansPro-Bold.ttf.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('../fonts/SourceSansPro/SourceSansPro-It.ttf.woff2') format('woff2'),
+       url('../fonts/SourceSansPro/SourceSansPro-It.ttf.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('../fonts/SourceSansPro/SourceSansPro-BoldIt.ttf.woff2') format('woff2'),
+       url('../fonts/SourceSansPro/SourceSansPro-BoldIt.ttf.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+
+
+
 .site-title {
     font-size: 28px;
     //font-weight: 500;
