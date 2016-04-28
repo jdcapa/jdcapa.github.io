@@ -6,7 +6,7 @@ permalink: /about/
 
 I'm a data scientist (sometimes called chemist, sometimes even called physicist)
  working at the
- [Max-Planck-Institute for Chemical Energy conversion](http://www.cec.mpg.de/home.html?L=1).
+ [Max-Planck-Institute for Chemical Energy Conversion](http://www.cec.mpg.de/home.html?L=1).
 My scientific interest includes molecular properties, vibrational and
  electronic structure as well as all things spectroscopic.
 
