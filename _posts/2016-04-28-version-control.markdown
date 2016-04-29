@@ -21,19 +21,19 @@ Most of you who develop code might have come in contact with this (if not
 
 For a version-controlled *coding project* in an everyday-kind-of-scenario there
  are two points I would like to raise.
-Once you initialised your git or svn controlled *coding project* in a certain 
+Once you initialised your git or svn controlled *coding project* in a certain
  folder you will find, next to the actual code, a **dot-folder** (i.e. `.git`
  or `.svn`).
-For larger projects this folder is rather large and if you are using additional 
+For larger projects this folder is rather large and if you are using additional
  syncing/backup solutions this will be impractical.
-It might also be useful to sepatate these dot-folders for the reasons of being 
- extra cautious as well as being organised (a dot-folder-folder grants a nice 
+It might also be useful to separate these dot-folders for the reasons of being
+ extra cautious as well as being organised (a dot-folder-folder grants a nice
  overview).
 Often you will also find (depending on the circumstances) that the **project
- folder** is tucked away neatly (or chaotically) somewhere in some deeper 
+ folder** is tucked away neatly (or chaotically) somewhere in some deeper
  folder structure.
-A general overview of all the version-controlled projects (quickly accessing 
- their respective status) would be quite useful. 
+A general overview of all the version-controlled projects (quickly accessing
+ their respective status) would be quite useful.
 
 tl;dr:
 
@@ -75,7 +75,7 @@ vcm -g -u jdcapa -vc git
 where you now also told the `projects.yaml` file that this project is a github
  project to be found under the username jdcapa.
 
-This might be interesting for future automation like a status list. 
+This might be interesting for future automation like a status list.
 For now I'm happy with the separation and overview feature.
 
 *-jdcapa*
