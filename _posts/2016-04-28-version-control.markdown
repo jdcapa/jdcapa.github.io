@@ -5,7 +5,7 @@ date:   2016-04-28 19:11:19 +0200
 categories: git svn version-control python coding
 ---
 
-Motivation
+motivation
 ----------
 
 I recently started to use
@@ -43,7 +43,7 @@ tl;dr:
 + I would like an overview of (and quick access to) all my projects
 
 
-Implementation
+implementation
 --------------
 
 As I said, the dot-folders need to be stored in **one** place (Obviously, a
@@ -69,11 +69,11 @@ you'll find your project to be added to the `projects.yaml` file and your
 Adding more features is easy, e.g.:
 
 {% highlight bash %}
-vcm -g -u jdcapa -vc git
+vcm -g -u user -vc git
 {% endhighlight %}
 
 where you now also told the `projects.yaml` file that this project is a github
- project to be found under the username jdcapa.
+ project to be found under the username `user`.
 
 This might be interesting for future automation like a status list.
 For now I'm happy with the separation and overview feature.
