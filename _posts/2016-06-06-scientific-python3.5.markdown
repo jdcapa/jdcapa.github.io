@@ -107,7 +107,7 @@ pip3 install -U --user cython
 pip3 install -U --user pyqt5
 {% endhighlight %}
 
-# Scientific Python
+### Scientific Python
 
 
 ## BLAS
