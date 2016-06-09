@@ -72,7 +72,18 @@ make
 make install PREFIX=$LOC
 cp ./libbz2.so.${BZVERSION} ${LOC}/lib
 ln -s ${LOC}/lib/libbz2.so.${BZVERSION} ${LOC}/lib/libbz2.so.1.0
+
+#HDF5
+cd $SOURCED
+wget http://www.hdfgroup.org/ftp/HDF5/releases/hdf5-1.10/hdf5-1.10.0-patch1/src/hdf5-1.10.0-patch1.tar.bz2
+extract hdf5-1.10.0-patch1.tar.bz2 
+cd hdf5-1.10.0-patch1/
+./configure --prefix=$LOC
+make -j4
+make install
+
 {% endhighlight %}
+
 
 
 ### Download and compile python3.5
