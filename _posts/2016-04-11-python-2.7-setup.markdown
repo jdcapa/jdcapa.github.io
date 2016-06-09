@@ -5,10 +5,11 @@ date:   2016-04-11 21:11:19 +0200
 categories: python science coding set-up
 ---
 
-#Building python2.7 from source
+Building python2.7 from source
+==============================
 
-##intro
-
+intro
+-----
 
 In the following I will describe my scientific python set-up.
 I'm currently working with *Linux Mint 17*.
@@ -17,8 +18,8 @@ This OS is shipped with Python 2.7.6; yet I like the additional
  of *Python 2.7.11* (once I updated my own programs I will shift to Python 3) and
  thus, this guide will be about the set-up of this very version.
 
-##pre-requisites
-
+pre-requisites
+--------------
 
 So lets get started; we'll begin with installing compiling Python 2.7.11, which
  requires a bunch of pre-requisites.
@@ -34,7 +35,8 @@ sudo apt-get install autotools-dev blt-dev bzip2 dpkg-dev g++-multilib gcc-multi
                      tk-dev zlib1g-dev
 {% endhighlight %}
 
-##download and compile python
+download and compile python2.7
+------------------------------
 
 Personally, I like to keep source code organised in `$HOME/.Source`, so that's
  where we'll start. Here is a the install script which installs Python into
@@ -55,8 +57,8 @@ make -s -j4 |& tee compile.log
 make install |& tee install.log
 {% endhighlight %}
 
-##bootstrapping
-
+bootstrapping
+-------------
 
 Now we need to bootstrap and update pip (and setup-tools) and prepare the
  virtual environment.
@@ -71,8 +73,8 @@ bin/pip install --user cython
 {% endhighlight %}
 
 
-##setting up the virtual environment
-
+setting up the virtual environment
+----------------------------------
 
 As you can see, in my
  [.bashrc](https://github.com/jdcapa/bashrc.d/blob/main/05.ENV_PYTHON),
