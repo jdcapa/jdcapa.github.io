@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "git and svn repository management"
-date:   2016-04-28 19:11:19 +0200
+title:  "Repository management with git and svn"
+date:   2016-04-28 21:11:19 +0200
 categories: git svn version-control python coding
 ---
 
-motivation
-----------
+##motivation
+
 
 I recently started to use
 [git](https://en.wikipedia.org/wiki/Git_%28software%29)
@@ -43,8 +43,8 @@ tl;dr:
 + I would like an overview of (and quick access to) all my projects
 
 
-implementation
---------------
+##implementation
+
 
 As I said, the dot-folders need to be stored in **one** place (Obviously, a
  symbolic dot-folder link to this location is created in their stead).
