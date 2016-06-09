@@ -9,8 +9,8 @@ categories: python science coding set-up
 
 
 In two previous posts I discussed the compilation of
- [Python2.7](python/science/coding/set-up/2016/04/11/python-2.7-setup.html)
- and the [scientific Python2.7 set-up](python/science/coding/set-up/2016/04/12/scientific-python.html).
+ [Python2.7](https://jdcapa.github.io/python/science/coding/set-up/2016/04/11/python-2.7-setup.html)
+ and the [scientific Python2.7 set-up](https://jdcapa.github.io/python/science/coding/set-up/2016/04/12/scientific-python.html).
 Due to some [valueble insights](https://wiki.python.org/moin/Python2orPython3#Which_version_should_I_use.3F),
  I recently decided to move all my projects to Python3.
 While this is a fairly [straightforward process](https://docs.python.org/3/howto/pyporting.html) process,
