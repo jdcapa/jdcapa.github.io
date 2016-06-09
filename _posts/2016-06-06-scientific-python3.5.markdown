@@ -5,7 +5,7 @@ date:   2016-06-06 21:11:19 +0200
 categories: python science coding set-up
 ---
 
-## Intro
+### Intro
 
 
 In two previous posts I discussed the compilation of
@@ -17,7 +17,7 @@ While this is a fairly [straightforward process](https://docs.python.org/3/howto
  the python3 installation process differs slightly from its 2.7 counterpart.
 
 
-## Pre-requisites
+### Pre-requisites
 
 The requirements for Linux Mint (which basically is a less annoying version of Ubuntu 14.04),
  are quite similar to the Python3.5 set-up:
@@ -75,7 +75,7 @@ ln -s ${LOC}/lib/libbz2.so.${BZVERSION} ${LOC}/lib/libbz2.so.1.0
 {% endhighlight %}
 
 
-## Download and compile python3.5
+### Download and compile python3.5
 
 
 Now we can start with Python.
@@ -94,7 +94,7 @@ make install |& tee install.log
 {% endhighlight %}
 
 
-## Basic packages
+### Basic packages
 
 Congratulations, you got Python3.5 installed.
 Now let's install some basic packages.
@@ -107,10 +107,10 @@ pip3 install -U --user cython
 pip3 install -U --user pyqt5
 {% endhighlight %}
 
-### Scientific Python
+## Scientific Python
 
 
-## BLAS
+### BLAS
 
 For both `numpy` and `scipy` we need a
  [BLAS](https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms)
@@ -139,7 +139,7 @@ fi
 {% endhighlight %}
 
 
-## Numpy
+### Numpy
 
 
 After this we can install [numpy](http://www.numpy.org/):
@@ -188,7 +188,7 @@ python3 setup.py install |& tee setup.log
 {% endhighlight %}
 
 
-## SciPy
+### SciPy
 
 
 Now open a new terminal (easiest way to get rid of the temporary variables) and
@@ -206,7 +206,7 @@ python3 setup.py build |& tee build.log
 python3 setup.py install --prefix=$LOC |& tee setup.log
 {% endhighlight %}
 
-## Other packages
+### Other packages
 
 I usually add some other python libraries:
 
