@@ -92,6 +92,6 @@ The virtualenv programme also allows you to create new temporary environments
  for your personal enjoyment.
 
 The command `python --version` should now return 'Python 2.7.11'.
-Make sure you reload your `.bashrc`
+Make sure you re-source your `.bashrc`.
 
 *-jdcapa*

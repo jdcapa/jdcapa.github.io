@@ -5,11 +5,8 @@ date:   2016-04-12 21:11:19 +0200
 categories: python science coding set-up
 ---
 
-#Scientific Python2.7
-
-
-##intro
-
+Intro
+-----
 
 While I like Python as a language, it would be nothing without the broad support
  of the scientific community.
@@ -22,8 +19,8 @@ The latter takes care of visualisation and beats most other (even commercial)
  packages when it comes to customisability.
 
 
-##BLAS
-
+BLAS
+----
 
 Anyway, let's make it happen.
 For both `numpy` and `scipy` we need a
@@ -53,7 +50,8 @@ fi
 {% endhighlight %}
 
 
-##numpy
+Numpy
+-----
 
 After this we can install numpy:
 
@@ -101,8 +99,9 @@ python setup.py build   |& tee build.log
 python setup.py install |& tee setup.log
 {% endhighlight %}
 
-##scipy
 
+SciPy
+-----
 
 Now open a new terminal (easiest way to get rid of the temporary variables) and
  install `scipy`.
@@ -119,7 +118,8 @@ python setup.py build   |& tee build.log
 python setup.py install |& tee setup.log
 {% endhighlight %}
 
-##other packages
+Other packages
+--------------
 
 I usually add some other python libraries:
 
