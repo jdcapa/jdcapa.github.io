@@ -33,7 +33,7 @@ sudo apt-get install autotools-dev blt-dev bzip2 dpkg-dev g++-multilib gcc-multi
 
 However, we also need the latest tk/tcl and bz2 libraries.
 Personally, I like to keep source code organised in `$HOME/.Source`, so that's
- where we'll start. 
+ where we'll start.
 The prefix (install) directory is  the `$HOME/.local` folder; feel free to change that
  to `/usr/local` or anything else you prefer.
 So let's start with a short tk/tcl/bz2 install script:
@@ -76,7 +76,7 @@ ln -s ${LOC}/lib/libbz2.so.${BZVERSION} ${LOC}/lib/libbz2.so.1.0
 #HDF5
 cd $SOURCED
 wget http://www.hdfgroup.org/ftp/HDF5/releases/hdf5-1.10/hdf5-1.10.0-patch1/src/hdf5-1.10.0-patch1.tar.bz2
-extract hdf5-1.10.0-patch1.tar.bz2 
+extract hdf5-1.10.0-patch1.tar.bz2
 cd hdf5-1.10.0-patch1/
 ./configure --prefix=$LOC
 make -j4
@@ -225,7 +225,7 @@ I usually add some other python libraries:
 pip3 install --user ipython
 pip3 install --user pandas
 pip3 install --user nose
-pip3 install --user h5py
+HDF5_DIR=$HOME/.local/ pip3 install h5py --user
 
 {% endhighlight %}
 
