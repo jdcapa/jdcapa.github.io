@@ -225,6 +225,8 @@ I usually add some other python libraries:
 pip3 install --user ipython
 pip3 install --user pandas
 pip3 install --user nose
+pip3 install --user matplotlib
+pip3 install --user pyyaml
 HDF5_DIR=$HOME/.local/ pip3 install h5py --user
 
 {% endhighlight %}
