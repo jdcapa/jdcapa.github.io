@@ -82,6 +82,15 @@ cd hdf5-1.10.0-patch1/
 make -j4
 make install
 
+#libYAML
+cd $SOURCED
+hg clone https://bitbucket.org/xi/libyaml
+cd libyaml
+./bootstrap
+./configure --prefix=$LOC
+make -j4
+make install
+
 {% endhighlight %}
 
 
@@ -117,6 +126,21 @@ pip3 install -U --user virtualenv
 pip3 install -U --user cython
 pip3 install -U --user pyqt5
 {% endhighlight %}
+
+### PyYAML
+
+To read and writ YAML efficiently I suggest building a fast implementation of PyYAML.
+
+{% highlight bash %}
+cd $SOURCED
+wget http://pyyaml.org/download/pyyaml/PyYAML-3.11.tar.gz
+extract PyYAML-3.11.tar.gz
+cd PyYAML-3.11
+include_dirs=$LOC/include
+library_dirs=$LOC/lib
+python3 setup.py --with-libyaml install
+{% endhighlight %}
+
 
 ## Scientific Python
 
