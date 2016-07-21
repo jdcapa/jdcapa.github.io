@@ -5,7 +5,7 @@ date:   2016-06-19 21:11:19 +0200
 categories: python science coding database
 ---
 
-In [one of my projects](https://github.com/jdcapa/ChemPhysConst), I am using an [HDF5 data container](https://www.hdfgroup.org/HDF5/) to store often-accessed data.
+In [one of my projects](https://github.com/jdcapa/ChemPhysConst), I'm using an [HDF5 data container](https://www.hdfgroup.org/HDF5/) to store often-accessed data.
 My understanding was that this provides an easy-to-use and quick-to-access file object even for small amounts of data and rapid opening and closing of the data container.
 However it seems that *this assumption is wrong*.
 
@@ -14,4 +14,4 @@ I'm not sure why exactly that is happening.
 While this could be my own fault (e.g. compiling the libraries improperly or inefficient access and use of the [hf5py](http://docs.h5py.org/en/latest/index.html) library in my code), it might also be related to a large overhead of the HDF5 object.
 
 The conclusion I draw from this is that an HDF5 container is not suitable for small amounts of often-accessed data when opening and closing the HDF5 container a lot.
-While there are [more general complaints](http://cyrille.rossant.net/moving-away-hdf5/) about the format, I am sure it is more applicable when storing large amounts of data that do not need to be accessed constantly. 
+While there are [more general complaints](http://cyrille.rossant.net/moving-away-hdf5/) about the format, I am sure it is more applicable when storing large amounts of data that do not need to be accessed constantly.
